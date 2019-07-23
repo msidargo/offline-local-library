@@ -30,7 +30,7 @@
                     {% else %}
                     <li><a href="{% url 'login' %}?next={{ request.path }}">Log in</a> </li>
                     <li>Dont have an account?</li>
-                    <li><a href="">Create User</a></li>
+                    <li><a href="{% url 'signup' %}">Create User</a></li>
 
                     {% endif %}
 

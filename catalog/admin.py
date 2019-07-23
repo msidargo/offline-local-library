@@ -1,5 +1,8 @@
 from django.contrib import admin
-from catalog.models import Author, Genre, Language, Book, BookInstance
+from catalog.models import Author, Genre, Language, Book, BookInstance, UserProfileInfo, User
+
+
+
 
 #define admin class
 class Books(admin.TabularInline):
@@ -41,5 +44,6 @@ class BookInstanceAdmin(admin.ModelAdmin):
 admin.site.register(Genre)
 admin.site.register(Language)
 admin.site.register(Author, AuthorAdmin)
+admin.site.register(UserProfileInfo)
 #admin.site.register(BookInstance)
 

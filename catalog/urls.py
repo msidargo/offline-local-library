@@ -29,4 +29,6 @@ urlpatterns = [
 
     path('bookinst/', views.BookInstanceListView.as_view(), name='bookinst'),
     path('bookinst/<uuid:pk>/', views.BookInstanceDetailView.as_view(), name='bookinst-detail'),
+
+    path('signup/', views.register, name='signup'),
 ]
