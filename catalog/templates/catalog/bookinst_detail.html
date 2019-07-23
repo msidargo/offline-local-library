@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1> Title: {{ bookinstance.book }}</h1>
+
+    <p><strong>Id: </strong> {{ bookinstance.id }} </p>
+    <p><strong>Book's Title: </strong> {{ bookinstance.book }}</p>
+    <p><strong>Imprint: </strong> {{ bookinstance.imprint }}</p>
+    <p><strong>Due Back: </strong> {{ bookinstance.due_back }}</p>
+    <p><strong>Status: </strong> {{ bookinstance.get_status_display }}</p>
+    <p><strong>Borrower: </strong>{{ bookinstance.borrower }}</p>
+
+    <p> If you want to update status, click <a href="bookinst_update">here</a> </p>
+
+{% endblock %}
+
